@@ -18,7 +18,7 @@ function Home({ history }) {
                 <input
                     placeholder="Insert a greeting"
                     value={input}
-                    onBlur={(e) => setInput(e.target.value)}
+                    onChange={(e) => setInput(e.target.value)}
                 />
                 <button onClick={handleOnClick}>Greet Me</button>
             </div>

@@ -1,11 +1,11 @@
 import Router from './routers';
 import { createBrowserHistory } from "history";
 
-const defaultHistory = createBrowserHistory();
+createBrowserHistory(); // * NOTE: do not remove this else code won't work
 
 
-function App({ history = defaultHistory }) {
-  return (<Router history={history} />);
+function App() {
+  return (<Router />);
 }
 
 export default App;

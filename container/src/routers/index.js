@@ -3,13 +3,13 @@ import { BrowserRouter, Switch, Route } from "react-router-dom";
 import GreetingCat from '../components/GreetingCat';
 import Home from './../components/Home';
 
-export default function Router({ history }) {
+export default function Router() {
     return (
         <BrowserRouter>
             <React.Fragment>
                 <Switch>
-                    <Route exact path="/" render={() => <Home history={history} />} />
-                    <Route exact path="/cat/:greeting" render={() => <GreetingCat history={history} />} />
+                    <Route exact path="/" component={Home} />
+                    <Route exact path="/cat/:greeting" component={GreetingCat} />
                 </Switch>
             </React.Fragment>
         </BrowserRouter>
