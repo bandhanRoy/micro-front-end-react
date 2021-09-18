@@ -1,0 +1,10 @@
+.banner {
+  background: #f5f5da;
+  padding: 30px;
+  text-align: center;
+  border-radius: 20px;
+}
+
+.banner-title {
+  color: #2d3d29;
+}
