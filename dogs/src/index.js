@@ -13,7 +13,10 @@ window.renderDogs = (containerId, history) => {
 };
 
 window.unmountDogs = containerId => {
-  ReactDOM.unmountComponentAtNode(document.getElementById(containerId));
+  const component = document.getElementById(containerId);
+  if (component) {
+    ReactDOM.unmountComponentAtNode(document.getElementById(containerId));
+  }
 };
 
 if (!document.getElementById('Dogs-container')) {
